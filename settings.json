@@ -1,0 +1,46 @@
+{
+  "telemetry.enableTelemetry": false,
+  "breadcrumbs.enabled": true,
+  "window.titleBarStyle": "custom",
+  "window.title": "${dirty}${activeEditorMedium}${separator}${rootName}",
+  "window.menuBarVisibility": "visible",
+  "workbench.colorTheme": "Blink Contrast (rainglow)",
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.tree.indent": 12,
+  "editor.fontSize": 15,
+  "editor.fontWeight": "500",
+  "editor.insertSpaces": true,
+  "editor.tabSize": 2,
+  "editor.renderWhitespace": "none",
+  "editor.rulers": [
+    80,
+    120
+  ],
+  "editor.formatOnSave": true,
+  "editor.suggestSelection": "first",
+  "editor.snippetSuggestions": "top",
+  "editor.wordWrapColumn": 80,
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/.cache": true
+  },
+  "files.autoSave": "off",
+  "files.watcherExclude": {
+    "**/.git/objects/**": true,
+    "**/.git/subtree-cache/**": true,
+    "**/node_modules/*/**": true,
+    "**/target/**/**": true
+  },
+  "javascript.updateImportsOnFileMove.enabled": "never",
+  "javascript.validate.enable": false,
+  "vsintellicode.modify.editor.suggestSelection": "choseToUpdateConfiguration",
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact",
+  },
+  "diffEditor.ignoreTrimWhitespace": false,
+  "eslint.autoFixOnSave": true,
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": false
+  },
+}
