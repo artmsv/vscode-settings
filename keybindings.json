@@ -75,5 +75,25 @@
   {
     "key": "ctrl+alt+numpad4",
     "command": "workbench.action.moveEditorToPreviousGroup"
+  },
+  {
+    "key": "ctrl+alt+up",
+    "command": "cursorMove",
+    "args": {
+        "to": "up",
+        "by": "line",
+        "value": 10
+    },
+    "when": "editorTextFocus"
+  },
+  {
+      "key": "ctrl+alt+down",
+      "command": "cursorMove",
+      "args": {
+          "to": "down",
+          "by": "line",
+          "value": 10
+      },
+      "when": "editorTextFocus"
   }
 ]
