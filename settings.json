@@ -4,24 +4,36 @@
   "window.titleBarStyle": "custom",
   "window.title": "${dirty}${activeEditorMedium}${separator}${rootName}",
   "window.menuBarVisibility": "visible",
+  "window.autoDetectColorScheme": true,
+  "workbench.preferredLightColorTheme": "Hub Light (rainglow)",
+  "workbench.preferredDarkColorTheme": "Blink Contrast (rainglow)",
   "workbench.colorTheme": "Blink Contrast (rainglow)",
+  // "workbench.colorTheme": "Blink Contrast (rainglow)",
+  // "workbench.colorTheme": "Waste Contrast (rainglow)",
+  // "workbench.colorTheme": "Hub Light (rainglow)",
   "workbench.iconTheme": "material-icon-theme",
   "workbench.tree.indent": 12,
+  "editor.fontFamily": "'JetBrains Mono','Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
+  "editor.fontWeight": "normal",
+  "editor.fontLigatures": true,
   "editor.fontSize": 15,
-  "editor.fontWeight": "500",
   "editor.insertSpaces": true,
   "editor.tabSize": 2,
   "editor.renderWhitespace": "none",
   "editor.rulers": [
-    80,
     120
   ],
-  "editor.formatOnSave": true,
+  "editor.formatOnSave": false,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true,
+    "source.fixAll.stylelint": false
+  },
   "editor.suggestSelection": "first",
-  "editor.snippetSuggestions": "top",
-  "editor.wordWrapColumn": 80,
+  "editor.snippetSuggestions": "inline",
+  "editor.wordWrapColumn": 120,
   "search.exclude": {
     "**/node_modules": true,
+    "**/package-lock.json": true,
     "**/.cache": true
   },
   "files.autoSave": "off",
@@ -29,18 +41,34 @@
     "**/.git/objects/**": true,
     "**/.git/subtree-cache/**": true,
     "**/node_modules/*/**": true,
+    "**/package-lock.json": true,
     "**/target/**/**": true
   },
   "javascript.updateImportsOnFileMove.enabled": "never",
-  "javascript.validate.enable": false,
+  // "javascript.validate.enable": false,
+  "prettier.resolveGlobalModules": true,
   "vsintellicode.modify.editor.suggestSelection": "choseToUpdateConfiguration",
   "emmet.includeLanguages": {
     "javascript": "javascriptreact",
   },
   "diffEditor.ignoreTrimWhitespace": false,
-  "eslint.autoFixOnSave": true,
-  "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.formatOnSave": false
+  "[cpp]": {
+    "editor.defaultFormatter": "xaver.clang-format"
   },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "terminal.integrated.fontFamily": "Hack",
+  "javascript.implicitProjectConfig.checkJs": false,
+  "workbench.activityBar.visible": true,
+  "todo-tree.tree.showScanModeButton": false,
 }
